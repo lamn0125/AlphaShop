@@ -1,14 +1,14 @@
-import React from "react";
+import styles from "./styles/Form.module.css";
 
 export default function Step1() {
   return (
-    <form class="col col-12" data-phase="address">
-      <h3 class="form-title">寄送地址</h3>
-      <section class="form-body col col-12">
-        <div class="col col-12">
-          <div class="input-group input-w-lg-2 input-w-sm-s1">
-            <div class="input-label">稱謂</div>
-            <div class="select-container">
+    <form className={styles.address} data-phase="address">
+      <h3 className={styles.formTitle}>寄送地址</h3>
+      <section className={styles.formBody}>
+        <div className={styles.formRow}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>稱謂</div>
+            <div className={styles.selectContainer}>
               <select>
                 <option value="mr" selected>
                   先生
@@ -18,25 +18,25 @@ export default function Step1() {
               </select>
             </div>
           </div>
-          <div class="input-group input-w-lg-4 input-w-sm-s2">
-            <div class="input-label">姓名</div>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>姓名</div>
             <input type="text" placeholder="請輸入姓名" />
           </div>
         </div>
-        <div class="col col-12">
-          <div class="input-group input-w-lg-3 input-w-sm-full">
-            <div class="input-label">電話</div>
+        <div className={styles.formRow}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>電話</div>
             <input type="tel" placeholder="請輸入行動電話" />
           </div>
-          <div class="input-group input-w-lg-3 input-w-sm-full">
-            <div class="input-label">Email</div>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>Email</div>
             <input type="email" placeholder="請輸入電子郵件" />
           </div>
         </div>
-        <div class="col col-12">
-          <div class="input-group input-w-lg-2 input-w-sm-full">
-            <div class="input-label">縣市</div>
-            <div class="select-container">
+        <div className={styles.formRow}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>縣市</div>
+            <div className={styles.selectContainer}>
               <select required>
                 <option value="">請選擇縣市</option>
                 <option value="KLU">基隆市</option>
@@ -71,8 +71,8 @@ export default function Step1() {
               </select>
             </div>
           </div>
-          <div class="input-group input-w-lg-4 input-w-sm-full">
-            <div class="input-label">地址</div>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>地址</div>
             <input type="text" placeholder="請輸入地址" />
           </div>
         </div>

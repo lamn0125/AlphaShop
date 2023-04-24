@@ -1,0 +1,54 @@
+.formTitle {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.formBody {
+  width: 600px;
+    /* border: 1px green solid; */
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  /* margin-right: 1rem; */
+}
+
+.inputLabel {
+  display: block;
+  color: #808080;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.inputLabel  ~ input {
+  border: 1px solid #808080;
+  height: 40px;
+  width: 400px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.inputLabel~ input[type="tel"], input[type="email"] {
+    width: 265px;
+}
+.selectContainer > select {
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+} 
+
+.selectContainer > select:invalid {
+  color: #808080;
+}

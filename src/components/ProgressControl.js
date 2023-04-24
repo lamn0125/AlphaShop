@@ -1,9 +1,12 @@
+import RightArrow from "../image/RightArrow.svg";
+
 export default function ProgressControl() {
   return (
     <section class="progress-control-container col col-lg-6 col-sm-12">
       <section class="button-group col col-12" data-phase="address">
         <button class="next">
           下一步
+          <img src={RightArrow} alt="" />
           {/* <svg class="cursor-point">
           <use xlink:href="#svg-icon-right-arrow"></use>
         </svg> */}
@@ -18,6 +21,7 @@ export default function ProgressControl() {
         </button>
         <button class="next">
           下一步
+          <img src={RightArrow} alt="" />
           {/* <svg class="cursor-point">
           <use xlink:href="#svg-icon-right-arrow"></use>
         </svg> */}

@@ -1,35 +1,44 @@
+import styles from "./styles/Step.module.css";
+import Ellipse from "../image/Ellipse.svg";
+
 export default function StepProgress() {
   return (
-    <section class="progress-container col col-12">
-      <span class="progress-group" data-phase="address">
-        <span class="progress-icon">
-          <span class="text">1</span>
-          {/* <svg class="icon cursor-point">
-            <use xlink:href="#svg-icon-pg-complete"></use>
-          </svg> */}
+    <div>
+      <h2 className={styles.registerTitle}>結帳</h2>
+      <section className={styles.progressContainer}>
+        <span className={styles.progressGroup} data-phase="address">
+          <span className={styles.progressIcon}>
+            <span className={styles.progressNum}>1</span>
+            <img src={Ellipse} alt="" />
+            {/* <svg class="icon cursor-point">
+              <use xlink:href="#svg-icon-pg-complete"></use>
+            </svg> */}
+          </span>
+          <span className={styles.progressLabel}>寄送地址</span>
         </span>
-        <span class="progress-label">寄送地址</span>
-      </span>
-      <span class="progress-bar" data-order="1"></span>
-      <span class="progress-group" data-phase="shipping">
-        <span class="progress-icon">
-          <span class="text">2</span>
-          {/* <svg class="icon cursor-point">
-            <use xlink:href="#svg-icon-pg-complete"></use>
-          </svg>  */}
+        <span className={styles.progressBar} data-order="1"></span>
+        <span className={styles.progressGroup} data-phase="shipping">
+          <span className={styles.progressIcon}>
+            <span className={styles.progressNum}>2</span>
+            <img src={Ellipse} alt="" />
+            {/* <svg class="icon cursor-point">
+              <use xlink:href="#svg-icon-pg-complete"></use>
+            </svg>  */}
+          </span>
+          <span className={styles.progressLabel}>運送方式</span>
         </span>
-        <span class="progress-label">運送方式</span>
-      </span>
-      <span class="progress-bar" data-order="2"></span>
-      <span class="progress-group" data-phase="credit-card">
-        <span class="progress-icon">
-          {/* <span class="text">3</span>
-          <svg class="icon cursor-point">
-            <use xlink:href="#svg-icon-pg-complete"></use>
-          </svg> */}
+        <span className={styles.progressBar} data-order="2"></span>
+        <span className={styles.progressGroup} data-phase="credit-card">
+          <span className={styles.progressIcon}>
+            <img src={Ellipse} alt="" />
+            <span className={styles.progressNum}>3</span>
+            {/* <svg class="icon cursor-point">
+              <use xlink:href="#svg-icon-pg-complete"></use>
+            </svg> */}
+          </span>
+          <span className={styles.progressLabel}>付款資訊</span>
         </span>
-        <span class="progress-label">付款資訊</span>
-      </span>
-    </section>
+      </section>
+    </div>
   );
 }

@@ -1,0 +1,58 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px auto 200px;;
+}
+
+.registerTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.progressContainer {
+  display: flex;
+  height: 36px;
+  width: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressGroup {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+}
+.progressIcon {
+  position: relative;
+}
+
+.progressNum {
+  position: absolute;
+  color: #FFF;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.progressLabel {
+  margin-left: 10px;
+}
+
+.progressBar {
+  /* display: block;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 18px;
+  left: 25%; */ 
+  display: flex;
+  flex: 1;
+  max-width: 60px;
+  height: 2px;
+  margin: 0px 8px;
+  background-color: #000;
+  justify-content: flex-start;
+}
+
