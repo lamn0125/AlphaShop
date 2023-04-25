@@ -1,7 +1,7 @@
 .mainContainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 70px auto 200px;;
+  grid-template-rows: 70px auto 200px;
 }
 
 .registerTitle {
@@ -31,7 +31,7 @@
 
 .progressNum {
   position: absolute;
-  color: #FFF;
+  color: #fff;
   right: 50%;
   transform: translate(50%);
 }
@@ -41,12 +41,6 @@
 }
 
 .progressBar {
-  /* display: block;
-  height: 1px;
-  background-color: #000;
-  position: absolute;
-  top: 18px;
-  left: 25%; */ 
   display: flex;
   flex: 1;
   max-width: 60px;
@@ -55,4 +49,3 @@
   background-color: #000;
   justify-content: flex-start;
 }
-

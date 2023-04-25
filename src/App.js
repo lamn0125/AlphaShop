@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
       <StepProgress />
-      <Step1 />
-      {/* <Step2 />
-      <Step3 /> */}
+      {/* <Step1 /> */}
+      <Step2 />
+      {/* <Step3 /> */}
       <ProgressControl />
     </div>
   );

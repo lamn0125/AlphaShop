@@ -1,31 +1,31 @@
-import styles from "./styles/Step.module.css";
+import styles from "./styles/Form.module.css";
 
 export default function Step2() {
   return (
     <form class="col col-12" data-phase="shipping">
       <h3 className={styles.formTitle}>運送方式</h3>
-      <section class="form-body col col-12">
-        <label class="radio-group col col-12" data-price="0">
+      <section className={styles.formBody}>
+        <label className={styles.radioGroup} data-price="0">
           <input id="shipping-standard" type="radio" name="shipping" checked />
-          <div class="radio-info">
-            <div class="col col-12">
+          <div className={styles.radioInfo}>
+            <div className={styles.radioTitle}>
               <div class="text">標準運送</div>
-              <div class="price"></div>
+              <div className={styles.radioPrice}>免費</div>
             </div>
-            <div class="period col col-12">約 3~7 個工作天</div>
+            <div className={styles.radioPeriod}>約 3~7 個工作天</div>
           </div>
-          <div class="radio-box-border"></div>
+          <div className={styles.boxBorder}></div>
         </label>
-        <label class="radio-group col col-12" data-price="500">
+        <label className={styles.radioGroup} data-price="500">
           <input id="shipping-dhl" type="radio" name="shipping" />
-          <div class="radio-info">
-            <div class="col col-12">
+          <div className={styles.radioInfo}>
+            <div className={styles.radioTitle}>
               <div class="text">DHL 貨運</div>
-              <div class="price"></div>
+              <div className={styles.radioPrice}>$500</div>
             </div>
-            <div class="period col col-12">48 小時內送達</div>
+            <div className={styles.radioPeriod}>48 小時內送達</div>
           </div>
-          <div class="radio-box-border"></div>
+          <div className={styles.boxBorder}></div>
         </label>
       </section>
     </form>

@@ -6,8 +6,10 @@
 
 .formBody {
   width: 600px;
-    /* border: 1px green solid; */
+  /* border: 1px green solid; */
 }
+
+/*Step 1*/
 
 .formRow {
   display: flex;
@@ -30,7 +32,7 @@
   margin-bottom: 5px;
 }
 
-.inputLabel  ~ input {
+.inputLabel ~ input {
   border: 1px solid #808080;
   height: 40px;
   width: 400px;
@@ -38,8 +40,9 @@
   padding: 0 10px;
 }
 
-.inputLabel~ input[type="tel"], input[type="email"] {
-    width: 265px;
+.inputLabel ~ input[type="tel"],
+input[type="email"] {
+  width: 265px;
 }
 .selectContainer > select {
   height: 40px;
@@ -47,8 +50,70 @@
   padding: 10px;
   border-radius: 4px;
   font-size: 12px;
-} 
+}
 
 .selectContainer > select:invalid {
   color: #808080;
+}
+
+/*Step 2*/
+.radioGroup {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.radioGroup:hover ~ .boxBorder {
+  border: 1px #2a2a2a solid;
+}
+
+.radioInfo {
+  width: 100%;
+  margin-left: 1.5rem;
+}
+.radioTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioPeriod {
+  font-size: 12px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  box-shadow: inset 0px 0px 0px 5px#000;
+}
+
+.radioPrice {
+  font-size: 12px;
+}
+
+.boxBorder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  border: 1px #f0f0f5 solid;
+}
+
+input[type="radio"]:checked ~ .boxBorder {
+  border: 1px solid #2a2a2a;
 }
