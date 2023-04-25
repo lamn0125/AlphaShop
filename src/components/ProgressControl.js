@@ -1,41 +1,33 @@
+import styles from "./styles/ProgressControl.module.css";
 import RightArrow from "../image/RightArrow.svg";
+import LeftArrow from "../image/LeftArrow.svg";
 
 export default function ProgressControl() {
   return (
-    <section class="progress-control-container col col-lg-6 col-sm-12">
-      <section class="button-group col col-12" data-phase="address">
-        <button class="next">
+    <section className={styles.progressControlContainer}>
+      <section className={styles.buttonGroup} data-phase="address">
+        <button className={styles.nextBtn}>
           下一步
           <img src={RightArrow} alt="" />
-          {/* <svg class="cursor-point">
-          <use xlink:href="#svg-icon-right-arrow"></use>
-        </svg> */}
         </button>
       </section>
-      <section class="button-group col col-12" data-phase="shipping">
-        <button class="prev">
-          {/* <svg class="cursor-point">
-          <use xlink:href="#svg-icon-left-arrow"></use>
-        </svg> */}
+      {/* <section className={styles.buttonGroup} data-phase="shipping">
+        <button className={styles.prevBtn}>
+          <img src={LeftArrow} alt="" />
           上一步
         </button>
-        <button class="next">
+        <button className={styles.nextBtn}>
           下一步
           <img src={RightArrow} alt="" />
-          {/* <svg class="cursor-point">
-          <use xlink:href="#svg-icon-right-arrow"></use>
-        </svg> */}
         </button>
       </section>
-      <section class="button-group col col-12" data-phase="credit-card">
-        <button class="prev">
-          {/* <svg class="cursor-point">
-          <use xlink:href="#svg-icon-left-arrow"></use>
-        </svg> */}
+      <section className={styles.buttonGroup} data-phase="credit-card">
+        <button className={styles.prevBtn}>
+          <img src={LeftArrow} alt="" />
           上一步
         </button>
-        <button class="next">確認下單</button>
-      </section>
+        <button className={styles.nextBtn}>確認下單</button>
+      </section> */}
     </section>
   );
 }
