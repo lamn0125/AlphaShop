@@ -8,11 +8,19 @@ import styles from "./components/styles/Step.module.css";
 function App() {
   return (
     <div>
-      <StepProgress />
-      {/* <Step1 /> */}
-      <Step2 />
-      {/* <Step3 /> */}
-      <ProgressControl />
+      <div
+        style={{
+          width: "50%",
+          height: "80vh",
+          padding: "20px",
+        }}
+      >
+        <StepProgress />
+        {/* <Step1 />
+        <Step2 /> */}
+        <Step3 />
+        <ProgressControl />
+      </div>
     </div>
   );
 }

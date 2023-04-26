@@ -1,6 +1,8 @@
 .progressControlContainer {
   border-top: 1px solid #e6e6eb;
-  width: 600px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   padding-top: 1.5rem;
 }
 

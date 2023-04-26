@@ -4,9 +4,9 @@ export default function Step1() {
   return (
     <form className={styles.address} data-phase="address">
       <h3 className={styles.formTitle}>寄送地址</h3>
-      <section className={styles.formBody}>
+      <section className={styles.formBody1}>
         <div className={styles.formRow}>
-          <div className={styles.inputGroup}>
+          <div className={styles.inputGroupSelect}>
             <div className={styles.inputLabel}>稱謂</div>
             <div className={styles.selectContainer}>
               <select>
@@ -20,7 +20,7 @@ export default function Step1() {
           </div>
           <div className={styles.inputGroup}>
             <div className={styles.inputLabel}>姓名</div>
-            <input type="text" placeholder="請輸入姓名" />
+            <input type="text" name="name" placeholder="請輸入姓名" />
           </div>
         </div>
         <div className={styles.formRow}>
@@ -34,7 +34,7 @@ export default function Step1() {
           </div>
         </div>
         <div className={styles.formRow}>
-          <div className={styles.inputGroup}>
+          <div className={styles.inputGroupSelect}>
             <div className={styles.inputLabel}>縣市</div>
             <div className={styles.selectContainer}>
               <select required>
@@ -73,7 +73,7 @@ export default function Step1() {
           </div>
           <div className={styles.inputGroup}>
             <div className={styles.inputLabel}>地址</div>
-            <input type="text" placeholder="請輸入地址" />
+            <input type="text" name="address" placeholder="請輸入地址" />
           </div>
         </div>
       </section>

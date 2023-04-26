@@ -4,7 +4,7 @@ export default function Step2() {
   return (
     <form class="col col-12" data-phase="shipping">
       <h3 className={styles.formTitle}>運送方式</h3>
-      <section className={styles.formBody}>
+      <section className={styles.formBody2}>
         <label className={styles.radioGroup} data-price="0">
           <input id="shipping-standard" type="radio" name="shipping" checked />
           <div className={styles.radioInfo}>

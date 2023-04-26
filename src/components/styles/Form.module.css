@@ -4,24 +4,26 @@
   text-align: left;
 }
 
-.formBody {
-  width: 600px;
-  /* border: 1px green solid; */
+/*Step 1 */
+.formBody1 {
+  width: 100%;
 }
-
-/*Step 1*/
 
 .formRow {
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
+  gap: 1rem;
 }
 
 .inputGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  /* margin-right: 1rem; */
+  flex: 1;
+}
+
+.inputGroupSelect {
+  flex: 0.25;
 }
 
 .inputLabel {
@@ -35,15 +37,10 @@
 .inputLabel ~ input {
   border: 1px solid #808080;
   height: 40px;
-  width: 400px;
   border-radius: 4px;
   padding: 0 10px;
 }
 
-.inputLabel ~ input[type="tel"],
-input[type="email"] {
-  width: 265px;
-}
 .selectContainer > select {
   height: 40px;
   width: 150px;
@@ -57,10 +54,13 @@ input[type="email"] {
 }
 
 /*Step 2*/
+.formBody2 {
+  width: 85%;
+}
+
 .radioGroup {
   display: flex;
   align-items: center;
-  width: 450px;
   height: 50px;
   padding: 10px;
   border-radius: 4px;
@@ -116,4 +116,19 @@ input[type="radio"]:checked {
 
 input[type="radio"]:checked ~ .boxBorder {
   border: 1px solid #2a2a2a;
+}
+
+/*Step 3*/
+.formBody3 {
+  width: 100%;
+}
+
+.input {
+  width: 60%;
+}
+
+.inputGroupDate {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
 }

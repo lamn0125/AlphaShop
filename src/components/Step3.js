@@ -1,30 +1,32 @@
-import styles from "./styles/Step.module.css";
+import styles from "./styles/Form.module.css";
 
 export default function Step3() {
   return (
-    <form class="col col-12" data-phase="credit-card">
+    <form data-phase="credit-card">
       <h3 className={styles.formTitle}>付款資訊</h3>
-      <section class="form-body col col-12">
-        <div class="col col-12">
-          <div class="input-group input-w-lg-4 input-w-sm-full">
-            <div class="input-label">持卡人姓名</div>
+      <section className={styles.formBody3}>
+        <div className={styles.input}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>持卡人姓名</div>
             <input type="text" placeholder="John Doe" />
           </div>
         </div>
-        <div class="col col-12">
-          <div class="input-group input-w-lg-4 input-w-sm-full">
-            <div class="input-label">卡號</div>
+        <div className={styles.input}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputLabel}>卡號</div>
             <input type="text" placeholder="1111 2222 3333 4444" />
           </div>
         </div>
-        <div class="col col-12">
-          <div class="input-group input-w-lg-3 input-w-sm-s3">
-            <div class="input-label">有效期限</div>
-            <input type="text" placeholder="MM/YY" />
-          </div>
-          <div class="input-group input-w-lg-3 input-w-sm-s3">
-            <div class="input-label">CVC / CCV</div>
-            <input type="text" placeholder="123" />
+        <div>
+          <div className={styles.inputGroupDate}>
+            <div className={styles.inputGroup}>
+              <div className={styles.inputLabel}>有效期限</div>
+              <input type="text" placeholder="MM/YY" />
+            </div>
+            <div className={styles.inputGroup}>
+              <div className={styles.inputLabel}>CVC / CCV</div>
+              <input type="text" placeholder="123" />
+            </div>
           </div>
         </div>
       </section>
