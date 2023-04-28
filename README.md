@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# This is a online shopping website -AlphaShop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is AlphaCamp(2-3) assignment 3 project.
 
-## Available Scripts
+# 專案範例
+<img width="500" alt="截圖 2023-04-28 下午1 00 46" src="https://user-images.githubusercontent.com/123957783/235058360-9d2435e9-3363-4557-800c-d17190de91d0.png"><img width="500" alt="截圖 2023-04-28 下午1 02 33" src="https://user-images.githubusercontent.com/123957783/235058489-814d36a8-4ccd-4e1b-82a4-c6b00d996912.png">
 
-In the project directory, you can run:
 
-### `npm start`
+## 如何開啟此專案
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. 開啟Terminal，Clone 此專案至本機電腦： https://github.com/lamn0125/AlphaShop.git
+2. 於Terminal cd 至此專案資料夾 cd my-app
+3. Terminal中安裝 npm 套件，輸入 npm install 指令
+4. 安裝完畢後輸入 npm run start 指令
+5. Terminal出現Compiled successfully! 可到 http://192.168.1.100:3000 進入專案
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 使用工具
+1. Visual Studio Code - 開發環境
+2. React - Framework
