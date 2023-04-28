@@ -1,32 +1,41 @@
 import styles from "./styles/Form.module.css";
 
+function Step2Input({ checked, price, id, text, amount, period }) {
+  return (
+    <label className={styles.radioGroup} data-price={price}>
+      <input id={id} type="radio" name="shipping" checked={checked} />
+      <div className={styles.radioInfo}>
+        <div className={styles.radioTitle}>
+          <div>{text}</div>
+          <div className={styles.radioPrice}>{amount}</div>
+        </div>
+        <div className={styles.radioPeriod}>{period}</div>
+      </div>
+      <div className={styles.boxBorder}></div>
+    </label>
+  );
+}
+
 export default function Step2() {
   return (
-    <form class="col col-12" data-phase="shipping">
+    <form data-phase="shipping">
       <h3 className={styles.formTitle}>運送方式</h3>
       <section className={styles.formBody2}>
-        <label className={styles.radioGroup} data-price="0">
-          <input id="shipping-standard" type="radio" name="shipping" checked />
-          <div className={styles.radioInfo}>
-            <div className={styles.radioTitle}>
-              <div class="text">標準運送</div>
-              <div className={styles.radioPrice}>免費</div>
-            </div>
-            <div className={styles.radioPeriod}>約 3~7 個工作天</div>
-          </div>
-          <div className={styles.boxBorder}></div>
-        </label>
-        <label className={styles.radioGroup} data-price="500">
-          <input id="shipping-dhl" type="radio" name="shipping" />
-          <div className={styles.radioInfo}>
-            <div className={styles.radioTitle}>
-              <div class="text">DHL 貨運</div>
-              <div className={styles.radioPrice}>$500</div>
-            </div>
-            <div className={styles.radioPeriod}>48 小時內送達</div>
-          </div>
-          <div className={styles.boxBorder}></div>
-        </label>
+        <Step2Input
+          checked={true}
+          price={"0"}
+          id={"shipping-standard"}
+          text={"標準運送"}
+          amount={"免費"}
+          period={"約 3~7 個工作天"}
+        />
+        <Step2Input
+          price={"500"}
+          id={"shipping-dhl"}
+          text={"DHL 貨運"}
+          amount={"500"}
+          period={"48 小時內送達"}
+        />
       </section>
     </form>
   );
