@@ -1,0 +1,41 @@
+.footerContainer {
+  display: flex;
+  background-color: #e5e5e5;
+  height: 20vh;
+  padding: 3rem;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  align-items: center;
+}
+
+.sectionContent a,
+.sectionContent .telInfo {
+  color: rgb(157, 157, 157);
+}
+
+.footerLogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+.socialIcons img {
+  color: red;
+}

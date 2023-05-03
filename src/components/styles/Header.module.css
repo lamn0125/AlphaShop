@@ -1,0 +1,45 @@
+.header {
+  height: 70px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.navBarMenu {
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navBarList {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink {
+  color: #000;
+  font-weight: 500;
+}
+
+.navItem {
+  list-style-type: none;
+  gap: 1rem;
+  /* border: 1px red solid; */
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.brandLogo {
+}
+
+.navIcons {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  cursor: pointer;
+}
