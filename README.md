@@ -3,7 +3,7 @@
 This project is AlphaCamp(2-3) assignment 3 project.
 
 # 專案範例
-<img width="500" alt="截圖 2023-04-28 下午1 00 46" src="https://user-images.githubusercontent.com/123957783/235058360-9d2435e9-3363-4557-800c-d17190de91d0.png"><img width="500" alt="截圖 2023-04-28 下午1 02 33" src="https://user-images.githubusercontent.com/123957783/235058489-814d36a8-4ccd-4e1b-82a4-c6b00d996912.png">
+<img width="1427" alt="截圖 2023-05-03 下午9 16 37" src="https://user-images.githubusercontent.com/123957783/235927131-2255b943-be94-4c5c-9535-e583b9eaded9.png">
 
 
 ## 如何開啟此專案
