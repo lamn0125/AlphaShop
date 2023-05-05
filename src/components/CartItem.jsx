@@ -1,6 +1,6 @@
 import styles from "./styles/Cart.module.css";
-import minusIcon from "../image/minusIcon.svg";
-import plusIcon from "../image/plusIcon.svg";
+import minusIcon from "image/minusIcon.svg";
+import plusIcon from "image/plusIcon.svg";
 import { useState } from "react";
 
 export default function CartItem({ id, name, img, price, quantity }) {

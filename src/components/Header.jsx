@@ -1,8 +1,8 @@
 import styles from "./styles/Header.module.css";
-import Logo from "../image/Logo.svg";
-import Cart from "../image/Iconcart.svg";
-import Dark from "../image/Icondark.svg";
-import Search from "../image/Iconsearch.svg";
+import Logo from "image/Logo.svg";
+import Cart from "image/Iconcart.svg";
+import Dark from "image/Icondark.svg";
+import Search from "image/Iconsearch.svg";
 
 function NavItem({ item }) {
   return (

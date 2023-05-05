@@ -1,5 +1,5 @@
 import styles from "./styles/Step.module.css";
-import Ellipse from "../image/Ellipse.svg";
+import Ellipse from "image/Ellipse.svg";
 
 function Step({ phase, stepNum, stepText }) {
   return (
