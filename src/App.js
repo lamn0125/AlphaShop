@@ -16,8 +16,8 @@ function App() {
         <div style={{ flex: "1", padding: "20px" }}>
           <StepProgress />
           <Step1 />
-          {/* <Step2 />
-            <Step3 /> */}
+          <Step2 />
+            <Step3 />
           <ProgressControl />
         </div>
         <div style={{ flex: 1, padding: "20px" }}>
