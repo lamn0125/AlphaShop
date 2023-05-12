@@ -25,9 +25,11 @@ function App() {
       <div className={styles.mainWrapper}>
         <section className={styles.mainContainer} data-phase={step}>
           <StepProgress />
+          <div className={styles.formsContainer}>
           {step === 1 && <Step1 />}
           {step === 2 && <Step2 />}
           {step === 3 && <Step3 />}
+          </div>
           <ProgressControl step={step} stepsHandler={stepsHandler}/>
         </section>
         <section className={styles.mainContainer}>

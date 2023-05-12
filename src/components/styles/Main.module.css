@@ -14,5 +14,10 @@ a {
 }
 .mainContainer {
   flex: 1;
-  padding: 20px;
+  padding: 50px;
+  /* border: 1px blue solid; */
+}
+.formsContainer {
+    /* border: 1px red solid; */
+    height: 50vh;
 }
