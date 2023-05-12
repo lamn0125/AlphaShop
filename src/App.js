@@ -18,13 +18,14 @@ function App() {
     } else if (e.target.className.includes("prevBtn")) {
       setStep(step - 1)
     }
+    console.log(step)
   }
   return (
     <div className={styles}>
       <Header />
       <div className={styles.mainWrapper}>
         <section className={styles.mainContainer} data-phase={step}>
-          <StepProgress />
+          <StepProgress step={step}/>
           <div className={styles.formsContainer}>
           {step === 1 && <Step1 />}
           {step === 2 && <Step2 />}
