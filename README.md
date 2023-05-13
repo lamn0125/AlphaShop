@@ -5,8 +5,9 @@ This project is AlphaCamp(2-3) assignment 3 project.
 # 專案範例
 <img width="1427" alt="截圖 2023-05-03 下午9 16 37" src="https://user-images.githubusercontent.com/123957783/235927131-2255b943-be94-4c5c-9535-e583b9eaded9.png">
 <img width="1425" alt="截圖 2023-05-12 下午10 58 16" src="https://github.com/lamn0125/AlphaShop/assets/123957783/e0bfd7ce-e1b5-4b4f-8b24-f8ed7b6a8595">
-可使用表單下方步驟按鈕調整表單進度
-可於購買車更改品項數
+
+1. 可使用表單下方步驟按鈕調整表單進度
+2. 可於購買車更改品項數
 
 
 
