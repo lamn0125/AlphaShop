@@ -19,10 +19,8 @@ export default function Step1() {
           <div className={styles.inputGroupSelect}>
             <div className={styles.inputLabel}>稱謂</div>
             <div className={styles.selectContainer}>
-              <select>
-                <option value='mr' selected>
-                  先生
-                </option>
+              <select defaultValue='mr'>
+                <option value='mr'>先生</option>
                 <option value='ms'>女士</option>
                 <option value='mx'>不明</option>
               </select>
@@ -38,7 +36,7 @@ export default function Step1() {
           <div className={styles.inputGroupSelect}>
             <div className={styles.inputLabel}>縣市</div>
             <div className={styles.selectContainer}>
-              <select required>
+              <select defaultValue='' required>
                 <option value=''>請選擇縣市</option>
                 {cities.map((city) => (
                   <option value={city.value} key={city.value}>
