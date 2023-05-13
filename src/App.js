@@ -18,7 +18,6 @@ function App() {
     } else if (e.target.className.includes("prevBtn")) {
       setStep(step - 1)
     }
-    console.log(step)
   }
   return (
     <div className={styles}>
