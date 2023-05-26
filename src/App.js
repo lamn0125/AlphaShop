@@ -7,11 +7,14 @@ import Step3 from "./components/Step3";
 import ProgressControl from "./components/ProgressControl";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+
+import { CheckoutContextProvider } from "./Context/CheckoutContext.js"
+import { CartContextProvider } from "./Context/CartContext.js"
+
 import { useState } from "react";
 
 function App() {
   const [ step, setStep ] = useState(1);
-
    function stepsHandler(e) {
     if (e.target.className.includes("nextBtn")&& step <= 3) {
       setStep(step + 1);
@@ -21,22 +24,27 @@ function App() {
   }
   return (
     <div className={styles}>
+    <CheckoutContextProvider >
+    <CartContextProvider>
       <Header />
       <div className={styles.mainWrapper}>
         <section className={styles.mainContainer} data-phase={step}>
           <StepProgress step={step}/>
           <div className={styles.formsContainer}>
-          {step === 1 && <Step1 />}
-          {step === 2 && <Step2 />}
-          {step === 3 && <Step3 />}
+            {step === 1 && <Step1 />}
+            {step === 2 && <Step2 />}
+              {step === 3 && <Step3 />}
+              <ProgressControl step={step} stepsHandler={stepsHandler}/>
           </div>
-          <ProgressControl step={step} stepsHandler={stepsHandler}/>
         </section>
         <section className={styles.mainContainer}>
           <Cart />
         </section>
       </div>
       <Footer />
+      </CartContextProvider>
+    </CheckoutContextProvider>
+
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import styles from './styles/Cart.module.css'
 import minusIcon from 'image/minusIcon.svg'
 import plusIcon from 'image/plusIcon.svg'
-import { useState } from 'react'
 
 export default function CartItem({
   id,
@@ -9,20 +8,9 @@ export default function CartItem({
   img,
   price,
   quantity,
-  getTotalPrice
+  handleMinusClick,
+  handleAddClick
 }) {
-  const [count, setCount] = useState(1)
-  function handleMinusClick() {
-    if (count > 0) {
-      setCount(count - 1)
-      getTotalPrice(-price)
-    }
-  }
-  function handleAddClick() {
-    setCount(count + 1)
-    getTotalPrice(price)
-  }
-
   return (
     <div
       className={styles.productContainer}
@@ -38,18 +26,18 @@ export default function CartItem({
               className={styles.minusIcon}
               src={minusIcon}
               alt=''
-              onClick={handleMinusClick}
+              onClick={() => handleMinusClick(id)}
             />
-            <span className={styles.productCount}>{count}</span>
+            <span className={styles.productCount}>{quantity}</span>
             <img
               className={styles.plusIcon}
               src={plusIcon}
               alt=''
-              onClick={handleAddClick}
+              onClick={() => handleAddClick(id)}
             />
           </div>
         </div>
-        <div className={styles.price}>{price * count}</div>
+        <div className={styles.price}>{price * quantity}</div>
       </div>
     </div>
   )

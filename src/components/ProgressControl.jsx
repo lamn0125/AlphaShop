@@ -1,13 +1,21 @@
 import styles from './styles/ProgressControl.module.css'
 import RightArrow from 'image/RightArrow.svg'
 import LeftArrow from 'image/LeftArrow.svg'
+import { useContext } from 'react'
+import { CheckoutContext } from '../Context/CheckoutContext.js'
 
 export default function ProgressControl({ step, stepsHandler }) {
+
   return (
     <section className={styles.progressControlContainer}>
       {step === 1 && <ButtonStep1 step={step} stepsHandler={stepsHandler} />}
       {step === 2 && <ButtonStep2 step={step} stepsHandler={stepsHandler} />}
-      {step === 3 && <ButtonStep3 step={step} stepsHandler={stepsHandler} />}
+      {step === 3 && (
+        <ButtonStep3
+          step={step}
+          stepsHandler={stepsHandler}
+        />
+      )}
     </section>
   )
 }
@@ -40,7 +48,11 @@ function ButtonStep2({ step, stepsHandler }) {
     </div>
   )
 }
-function ButtonStep3({ step, stepsHandler }) {
+function ButtonStep3({ stepsHandler }) {
+  const { checkoutInput } = useContext(CheckoutContext)
+  const onSubmit = () => {
+    console.log(checkoutInput)
+  }
   return (
     <div>
       <section className={styles.buttonGroup} data-phase='credit-card'>
@@ -48,7 +60,9 @@ function ButtonStep3({ step, stepsHandler }) {
           <img src={LeftArrow} alt='' />
           上一步
         </button>
-        <button className={styles.nextBtn}>確認下單</button>
+        <button className={styles.nextBtn} onClick={onSubmit}>
+          確認下單
+        </button>
       </section>
     </div>
   )
